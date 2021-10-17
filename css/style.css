@@ -11,9 +11,9 @@ body {
 
 :root {
   --image: url(../img/webdeveloper.jpg);
-  --heroImage: url(../img/hero-img2.png);
+  --heroImage: url(../img/webdeveloper.jpg);
   --heroImageDark: url(../img/bann-dark.jpeg);
-  --heroDark: url(../img/bann-dark2.jpeg);
+  --heroDark: url(../img/bdark.jpg);
 }
 /* -------------------------------------------------------------------------- */
 /*                                    Style                                   */
@@ -34,11 +34,7 @@ body {
 }
 /* logo */
 .grt-menu-logo a img {
-  border-radius: 10px;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  margin-top: 10px;
 }
 /* -------------------------------------------------------------------------- */
 /*                             Mobile only style                             */
@@ -103,25 +99,21 @@ body {
   background-size: cover;
   background-attachment: fixed;
 }
-@import url(https://fonts.googleapis.com/css?family=Khula:700);
-.hidden {
-  opacity: 0;
-}
-.console-container {
-  font-family: Khula;
-  font-size: auto;
-  text-align: center;
-  height: auto;
-  width: 85vw;
-  display: block;
+.heroImage-title {
   position: absolute;
-  color: white;
-  top: 18vh;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  text-transform: capitalize;
+  top: 120px;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.heroImage-paragraph {
+  position: absolute;
+  top: 270px;
+  text-align: center;
+  width: 100%;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: bold;
 }
 /* -------------------------------------------------------------------------- */
 /*                                    Menu                                    */
@@ -145,6 +137,7 @@ ul.grt-menu li a {
   margin-bottom: 0;
   text-align: center;
   width: 100%;
+  margin-block-start: 0;
 }
 .about-main__paragraph {
   width: 90%;
@@ -152,118 +145,20 @@ ul.grt-menu li a {
   margin-right: auto;
   text-align: center;
 }
-/* -------------------------------------------------------------------------- */
-/*                This coding are about, vision, mission image                */
-/* -------------------------------------------------------------------------- */
-.about__img,
-.about-mision__img,
-.about-vision__img,
-.about-values__img {
-  margin-top: 10px;
-  width: 100%;
-}
-.about-mision__img,
-.about-vision__img {
-  height: 40vh;
-}
-/* -------------------------------------------------------------------------- */
-/*                                  About Why                                 */
-/* -------------------------------------------------------------------------- */
-/* This coding are about main why and values */
-.about-main__why,
-.about-values {
-  text-align: center;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.why__li ul,
-.about-values__li ul {
-  list-style-type: none;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  padding-inline-start: 5vw;
-  width: 100%;
-  text-align: left;
-}
-.why__li ul li:before,
-.about-values__li ul li:before {
-  content: "\f00c";
-  font-family: "FontAwesome";
-  color: #5ca9fb;
-  font-size: 11px;
-  font-weight: 300;
-  padding-right: 8px;
-}
-/* -------------------------------------------------------------------------- */
-/*                          Mission, vission, values                          */
-/* -------------------------------------------------------------------------- */
-.about-mission,
-.about-vission,
-.about-values {
-  width: 100%;
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.about-mission__title,
-.about-values__title,
-.about-vission__title,
-.about-team__title {
-  margin-block-start: 2em;
-  margin-block-end: 0em;
-  text-align: center;
-}
-.about-mission__paragraph,
-.about-values__paragraph,
-.about-vission__paragraph,
-.about-team__paragraph {
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  width: 85%;
-  word-spacing: 5px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5vh;
-}
-/* -------------------------------------------------------------------------- */
-/*                                   Values                                   */
-/* -------------------------------------------------------------------------- */
-.about-values {
-  text-align: center;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.about-values ul {
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-}
-.about-values__li:first-of-type {
-  margin-top: 5vh;
-}
+
 /* -------------------------------------------------------------------------- */
 /*                                 About-Team                                 */
 /* -------------------------------------------------------------------------- */
-.about-team {
-  width: 100%;
-}
 .team-people {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
   width: 100%;
-  /* max-width: 90%; */
   margin-left: auto;
   margin-right: auto;
 }
 .team-people-card {
-  /* max-width: 95%; */
   width: 100%;
   margin-top: 5vh;
   overflow: hidden;
@@ -272,35 +167,57 @@ ul.grt-menu li a {
   text-align: center;
 }
 .team-people-card__img {
-  width: 50%;
-  max-width: 60%;
-  height: 30vh;
+  max-width: 70%;
+  max-height: 30vh;
   border-radius: 40px;
   -webkit-border-radius: 40px;
   -moz-border-radius: 40px;
   -ms-border-radius: 40px;
   -o-border-radius: 40px;
 }
-
 .team-people-card__name {
   font-size: 1.1rem;
   line-height: 1.1;
   font-weight: 600;
-  color: #333;
   margin-block-end: 0em;
   text-align: center;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
 }
-.team-peole-card__position {
-  font-size: 1rem;
-  color: #888;
-  font-weight: normal;
+/* -------------------------------------------------------------------------- */
+/*                                Technologies                                */
+/* -------------------------------------------------------------------------- */
+.technologies-title {
+  font-weight: bolder;
   text-align: center;
-  margin-top: 2vh;
+  font-size: 2rem;
+  margin-block-start: 0;
 }
-
+.technologies-paragraph {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 5vh;
+}
+.tecnologies-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.container__tecn {
+  width: 70vw;
+  height: auto;
+  margin-bottom: 5vh;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
 /* -------------------------------------------------------------------------- */
 /*                                  Services                                  */
 /* -------------------------------------------------------------------------- */
@@ -308,7 +225,9 @@ ul.grt-menu li a {
   font-weight: bolder;
   text-align: center;
   font-size: 2rem;
+  margin-block-start: 0;
 }
+
 .services__paragraph {
   width: 90%;
   margin-left: auto;
@@ -353,9 +272,6 @@ ul.grt-menu li a {
 .service-icon__paragraph {
   text-align: center;
 }
-.service-icon__paragraph {
-  color: rgba(255, 255, 255, 0.75);
-}
 /* -------------------------------------------------------------------------- */
 /*                                   Gallery                                  */
 /* -------------------------------------------------------------------------- */
@@ -363,6 +279,7 @@ ul.grt-menu li a {
   font-weight: bolder;
   text-align: center;
   font-size: 2rem;
+  margin-block-start: 0;
 }
 .gallery_paragraph {
   width: 90%;
@@ -375,32 +292,18 @@ ul.grt-menu li a {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 95%;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
 .projects-container {
-  width: 100%;
-  height: 30vh;
-  margin-left: auto;
-  margin-right: auto;
-  overflow: hidden;
-  position: relative;
-  z-index: 5;
-  border-radius: 1rem;
-  padding-left: 1rem;
-  background-color: transparent;
-  padding: 1rem;
-  margin-left: 1vw;
-  margin-top: 2vh;
-  -webkit-border-radius: 1rem;
-  -moz-border-radius: 1rem;
-  -ms-border-radius: 1rem;
-  -o-border-radius: 1rem;
+  width: 70vw;
+  max-height: 45vh;
+  margin-bottom: 5vh;
 }
 .projects-container img {
-  width: 100%;
-  height: 90%;
+  max-width: 100%;
+  height: 25vh;
   margin-left: auto;
   margin-right: auto;
   transition: all 400ms ease-out;
@@ -456,6 +359,7 @@ ul.grt-menu li a {
   font-weight: bolder;
   text-align: center;
   font-size: 2rem;
+  margin-block-start: 0;
 }
 .contact-paragraph {
   width: 90%;
@@ -527,15 +431,10 @@ ul.grt-menu li a {
 .contact-info i.fa {
   margin-right: 10px;
 }
-.phone-paragraph,
-.email-paragraph,
-.address-paragraph {
+.email-paragraph {
   color: rgba(255, 255, 255, 0.75);
 }
-.text-decoration {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.75);
-}
+
 /* -------------------------------------------------------------------------- */
 /*                                   Social                                   */
 /* -------------------------------------------------------------------------- */
@@ -548,8 +447,9 @@ ul.grt-menu li a {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-.social__facebook,
-.social__twitter {
+.social__github,
+.social__linkedin,
+.social__facebook {
   background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
   border: 2px solid white;
   width: 15px;
@@ -566,6 +466,7 @@ ul.grt-menu li a {
   font-weight: 400;
   color: white;
 }
+
 /* -------------------------------------------------------------------------- */
 /*                                   footer                                   */
 /* -------------------------------------------------------------------------- */
@@ -573,7 +474,10 @@ ul.grt-menu li a {
   width: 100%;
   text-align: center;
   padding: 5vh 0 5vh 0;
-  color: #888;
+}
+.text-decoration {
+  text-decoration: none;
+  color: black;
 }
 /* -------------------------------------------------------------------------- */
 /*                             Desktop only style                             */
@@ -588,13 +492,6 @@ ul.grt-menu li a {
   /* -------------------------------------------------------------------------- */
   .heroImage {
     background-image: var(--image);
-  }
-  /* -------------------------------------------------------------------------- */
-  /*                                Console Title                               */
-  /* -------------------------------------------------------------------------- */
-  .console-container {
-    font-size: 2rem;
-    letter-spacing: 5px;
   }
   /* -------------------------------------------------------------------------- */
   /*                                    About                                   */
@@ -827,7 +724,7 @@ body.dark-mode {
 /* -------------------------------------------------------------------------- */
 .dark-mode .heroImage {
   background-image: var(--heroImageDark);
-  background-position: right;
+  background-position: left;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -866,7 +763,9 @@ body.dark-mode {
 .dark-mode .article-white .team-people-card__name {
   color: #888;
 }
-
+.dark-mode .text-decoration {
+  color: white;
+}
 /* -------------------------------------------------------------------------- */
 /*                           Desktop only style dark                          */
 /* -------------------------------------------------------------------------- */
