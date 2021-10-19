@@ -26,7 +26,9 @@ header nav {
   clear: both;
   display: block;
   line-height: 60px;
+  /* height: 60px; */
   height: 60px;
+  width: 100%;
   position: relative;
 }
 
@@ -189,15 +191,15 @@ ul.grt-menu li.grt-dropdown.active-dropdown a {
 /* Tablet only style */
 @media (min-width: 768px) and (max-width: 991px) {
   ul.grt-menu li a {
-    font-size: 18px;
+    font-size: 15px;
   }
 }
 
 /* Mobile only style */
 @media (max-width: 767px) {
   .menu-container {
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .grt-mobile-button {
