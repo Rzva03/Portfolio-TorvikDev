@@ -15,6 +15,9 @@ body {
   --heroImageDark: url(../img/bann-dark.jpeg);
   --heroDark: url(../img/bdark.jpg);
 }
+.grt-menu-logo img {
+  margin-top: 0.5rem;
+}
 /* -------------------------------------------------------------------------- */
 /*                                    Style                                   */
 /* -------------------------------------------------------------------------- */
@@ -574,6 +577,8 @@ ul.grt-menu li a {
   }
   .projects-container {
     width: 25%;
+    width: 40%;
+    text-align: center;
   }
   .description-hover {
     height: 100%;
