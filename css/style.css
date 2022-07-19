@@ -170,13 +170,9 @@ ul.grt-menu li a {
   text-align: center;
 }
 .team-people-card__img {
-  max-width: 70%;
-  max-height: 30vh;
-  border-radius: 40px;
-  -webkit-border-radius: 40px;
-  -moz-border-radius: 40px;
-  -ms-border-radius: 40px;
-  -o-border-radius: 40px;
+  max-width: 60%;
+  max-height: 60vh;
+  border-radius: 50%;
 }
 .team-people-card__name {
   font-size: 1.1rem;
@@ -527,13 +523,12 @@ ul.grt-menu li a {
   /*                                 About-Team                                 */
   /* -------------------------------------------------------------------------- */
   .team-people-card {
-    width: 30%;
+    width: 20%;
   }
   .team-people-card__img {
-    width: 75%;
-    max-width: 80%;
-    margin-left: 0;
-    margin-right: 0;
+    max-width: 100%;
+    max-height: 50vh;
+    border-radius: 50%;
   }
 
   .team-people-card__name {
